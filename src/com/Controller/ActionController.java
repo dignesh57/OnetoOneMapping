@@ -46,7 +46,7 @@ public class ActionController extends HttpServlet {
 			eid.setEmail(request.getParameter("email"));
 			eid.setAddress(request.getParameter("address"));
 			e.setEpi(eid);
-			
+			//this is employee insert method
 			EmpDao.insertEmp(e);
 			
 			response.sendRedirect("show.jsp");
